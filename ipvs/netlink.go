@@ -257,7 +257,7 @@ done:
 	return res, nil
 }
 
-func parseIP(ip []byte, family uint) (net.IP, error) {
+func parseIP(ip []byte, family uint16) (net.IP, error) {
 
 	var resIP net.IP
 
