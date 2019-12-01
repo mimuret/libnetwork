@@ -424,7 +424,7 @@ func assembleDestination(attrs []syscall.NetlinkRouteAttr, addressFamily uint16)
 
 	var d Destination
 	var addressBytes []byte
-	d.addressFamily = addressFamily
+	d.AddressFamily = addressFamily
 	for _, attr := range attrs {
 
 		attrType := int(attr.Attr.Type)
